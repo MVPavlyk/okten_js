@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right bottom, blueviolet, deeppink);
+    font-family: sans-serif;
+    color: white;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+
+.post-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 18%;
+    text-align: center;
+}
+
+
