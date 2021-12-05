@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework</title>
+    <style>
+        #text{
+            width: 200px;
+            padding: 10px;
+            border: 2px solid cornflowerblue;
+            cursor: pointer;
+        }
+        .text__wrap{
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .none{
+            display: none;
+        }
+        .age__checker{
+            margin-top: 100px;
+        }
+
+        .go-out__menu{
+            margin-top: 100px;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu{
+            width: 100px;
+            border: 1px solid black;
+            transition: all .3s linear;
+        }
+
+        .burger{
+            height: 30px;
+            width: 30px;
+            border: 1px solid cornflowerblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 4px;
+            cursor: pointer;
+        }
+
+        .burger div{
+            width: 28px;
+            height: 3px;
+            background-color: cornflowerblue;
+        }
+
+        .go{
+            margin-left: -110px;
+        }
+
+        .comment__wrap{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding-left: 40px;
+        }
+
+        .comment__block{
+            height: 40px;
+            width: 500px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px 0 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="text__wrap">
+    <div id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, ipsum?</div>
+    <button class="text_none">
+        DELETE
+    </button>
+</div>
+
+<div class="selfDelete"> </div>
+<div class="age__checker">
+    <form action="/someaction" id="check">
+        <input type="number" placeholder="Write your age" name="age">
+        <button>check</button>
+    </form>
+</div>
+
+
+
+<div class="go-out__menu">
+    <div class="menu">
+        <ul>
+            <li>point 1</li>
+            <li>point 2</li>
+            <li>point 3</li>
+            <li>point 4</li>
+        </ul>
+    </div>
+    <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<div class="comment__wrap">
+
+</div>
+
+
+<script src="script.js" ></script>
+</body>
+</html>

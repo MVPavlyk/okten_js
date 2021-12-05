@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classwork</title>
+    <style>
+        #f2{
+            margin: 20px 0;
+        }
+
+        #tableMaker,
+        #badWord,
+        #badWord2{
+            margin-top: 40px;
+        }
+
+        table{
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<form action="/action" id="f1">
+    <input type="text" name="fname" placeholder="Ім'я батька">
+    <input type="text" name="fsurname" placeholder="Прізвище батька">
+</form>
+<form action="/action2" id="f2">
+    <input type="text" name="mname" placeholder="Ім'я матері">
+    <input type="text" name="msurname" placeholder="Прізвище матері">
+</form>
+<button id="parents">Зберегти дані</button>
+
+
+<form action="/act" id="tableMaker">
+    <input type="number" name="rownum" placeholder="Кількість рядків">
+    <input type="number" name="column" placeholder="Кількість стовпців">
+    <input type="text" name="content" placeholder="Контент">
+    <button>Створити таблицю</button>
+</form>
+
+<form action="/action10" id="badWord">
+    <input type="text" name="matiuk" placeholder="не матюкайся!">
+    <button>check</button>
+</form>
+
+<form action="/action10" id="badWord2">
+    <input type="text" name="matiuk" placeholder="не матюкайся в реченні!">
+    <button>check</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

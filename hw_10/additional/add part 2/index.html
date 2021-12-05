@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #f1{
+            display: flex;
+            align-items: center;
+        }
+        h3{
+            margin-left: 10px;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            row-gap: 10px;
+            border: 1px solid black;
+            width: 800px;
+        }
+        .wrap div{
+            display: flex;
+            height: 40px;
+            width: 100%;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<form action="/action" id="f1">
+    <h3>Статус false:</h3>
+    <input type="checkbox" name="status">
+    <h3>Старше 29 р:</h3>
+    <input type="checkbox" name="age">
+    <h3>Києвляни:</h3>
+    <input type="checkbox" name="city">
+    <button>FILTER</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
