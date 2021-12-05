@@ -1,3 +1,5 @@
+/*- Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.*/
+
 let carousel = document.getElementsByClassName('carousel')[0];
 let k = 0;
 let left = document.getElementById('left');
