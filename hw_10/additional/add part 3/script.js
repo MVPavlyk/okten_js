@@ -10,19 +10,46 @@
 let down = document.getElementById('down')
 let up = document.getElementById('up')
 
+
+let elements = [];
+
 function goTo (object){
     let target = object.children;
     for (let i = 0; i < target.length; i++) {
-        goTo(target[i]);
-        console.log(target[i])
+        if (!target[i].classList.contains('buttons')){
+            elements.push(target[i])
+            goTo(target[i]);
+        }
     }
 }
 
+let i = 0;
+
 goTo(document.body);
+let empty = document.getElementsByClassName('target')
+
+down.onclick = function (){
+    if (empty.length) {
+        elements[i].classList.remove('target');
+    }
+    if (i >= 0 && i < elements.length-2){
+        i++
+    } else {
+        i = 1;
+    }
+    elements[i].classList.add('target');
+}
+
+up.onclick = function () {
+    if (empty.length) {
+        elements[i].classList.remove('target');
+    }
+    if (i >= 1){
+        i--
+    } else {
+        i = elements.length-2;
+    }
+    elements[i].classList.add('target');
+}
 
 
-// Друже ментор, підкажи в якому напрямку рухатися
-// Як зробити так, щоб я керував змінною і, яка ітерує об'єкти, з кнопок подружити це з рекурсією
-// Якщо окремо ці 2 дії я можу зробити, то разом не виходить
-// то у функції кнопки рекурсія просто оне працює, а якщо винести рекурсію за кнопку то компілятор сповіщає безкінечну рекурсію
-// підкажи чи я у правильному напрямку рухаюсь чи взагалі треба щось інше

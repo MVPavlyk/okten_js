@@ -24,17 +24,15 @@ right.onclick = function () {
 }
 
 
-
 /* Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
  *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан*/
 
 
 let change = document.getElementById('change');
-change.onclick = function (){
-    let selObj = window.getSelection().toString();
-    console.log(selObj);
+change.onclick = function () {
+    let select = window.getSelection().toString();
+    let target = document.getElementById("target");
+    target.innerHTML = target.innerText.replace(select,
+        `<span class="edit"> ${select} </span>`);
 }
-
-//от і тут я теж встряг
-// банально нерозумію я обгорнути текст в span
 

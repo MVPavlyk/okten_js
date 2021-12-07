@@ -32,11 +32,11 @@ filter.onsubmit = function (e){
         document.body.removeChild(wr[0])
     }
 
-    let city;
+   /* let city;
     if (this.city.checked === true) {
         city = true;
     } else city = city = 'Kyiv';
-
+*/
     let statusFilter = () =>{
         let result;
         if (filter.status.checked === true){
