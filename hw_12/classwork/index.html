@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classwork</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            row-gap: 20px;
+        }
+
+        h3, h4 {
+            font-weight: 500;
+        }
+
+        .post {
+            width: 40%;
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .com {
+            position: absolute;
+            border: 1px solid black;
+            display: none;
+            background-color: lightgray;
+            padding: 5px;
+            height: 150px;
+            overflow-y: scroll;
+        }
+
+        .com::-webkit-scrollbar {
+            width: 7px;
+            background-color: lightgray;
+        }
+
+        .com::-webkit-scrollbar-thumb {
+            background-color: #000;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .btn {
+            display: flex;
+            column-gap: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

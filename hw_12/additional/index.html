@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            font-family: sans-serif;
+        }
+
+        .user__wrap {
+            border: 1px solid black;
+            padding: 5px;
+            width: 95%;
+            display: flex;
+            height: 700px;
+            column-gap: 10px;
+        }
+
+        .user {
+            border: 1px solid black;
+            width: 33%;
+            padding: 10px;
+        }
+
+        .post__wrap {
+            border: 1px solid black;
+            width: 33%;
+            display: none;
+            flex-direction: column;
+            padding: 5px;
+            row-gap: 5px;
+            overflow-y: scroll;
+        }
+
+        .comment__wrap > div{
+            margin-bottom: 5px;
+        }
+        .comment__wrap > div:last-child{
+            margin: 0;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .post__wrap::-webkit-scrollbar {
+            width: 7px;
+            background-color: #ffffff;
+        }
+
+        .post__wrap::-webkit-scrollbar-thumb {
+            background-color: lightgray;
+        }
+
+        .post {
+            /*width: 100%;*/
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    <title>Additional</title>
+</head>
+<body>
+
+
+<script src="script.js"></script>
+</body>
+</html>
